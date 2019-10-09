@@ -133,25 +133,46 @@ var peopleWithScores: [[String: String]] = [
 
 var highestScoringName = ""
 
-// Your code here
+
 
 //assert(highestScoringName == "Garry Mckenzie", "Was expecting Garry Mckenzie, but got \(highestScoringName)")
 
 // Question Five
 
 // Write code below such that cubeDict maps the numbers between 1 and 20 inclusive to their cubes.  A number's cube is that number multiplied by itself twice:
-// 2 ^ 3 = 2 * 2 * 2 = 8
+//var tet = 2 ^ 3 = 2 * 2 * 2 = 8
 
-var cubeDict: [Int: Int] = [:]
+var cubeDict: [Int: Int] = [
+    1:Int(pow(Double(1),Double(3))),
+    2:Int(pow(Double(2),Double(3))),
+    3:Int(pow(Double(3),Double(3))),
+    4:Int(pow(Double(4),Double(3))),
+    5:Int(pow(Double(5),Double(3))),
+    6:Int(pow(Double(6),Double(3))),
+    7:Int(pow(Double(7),Double(3))),
+    8:Int(pow(Double(8),Double(3))),
+    9:Int(pow(Double(9),Double(3))),
+    10:Int(pow(Double(10),Double(3))),
+    11:Int(pow(Double(11),Double(3))),
+    12:Int(pow(Double(12),Double(3))),
+    13:Int(pow(Double(13),Double(3))),
+    14:Int(pow(Double(14),Double(3))),
+    15:Int(pow(Double(15),Double(3))),
+    16:Int(pow(Double(16),Double(3))),
+    17:Int(pow(Double(17),Double(3))),
+    18:Int(pow(Double(18),Double(3))),
+    19:Int(pow(Double(19),Double(3))),
+    20:Int(pow(Double(20),Double(3))),
+]
 
-// Your code here
 
-//assert(cubeDict.count == 20, "Was expecting 20, but got \(cubeDict.count)")
-//assert(cubeDict[1] == 1, "Was expecting 1, but got \(String(describing: cubeDict[1]))")
-//assert(cubeDict[2] == 8, "Was expecting 8, but got \(String(describing: cubeDict[2]))")
-//assert(cubeDict[3] == 27, "Was expecting 27, but got \(String(describing: cubeDict[3]))")
-//assert(cubeDict[14] == 2744, "Was expecting 2744, but got \(String(describing: cubeDict[14]))")
-//assert(cubeDict[20] == 8000, "Was expecting 8000, but got \(String(describing: cubeDict[20]))")
+
+assert(cubeDict.count == 20, "Was expecting 20, but got \(cubeDict.count)")
+assert(cubeDict[1] == 1, "Was expecting 1, but got \(String(describing: cubeDict[1]))")
+assert(cubeDict[2] == 8, "Was expecting 8, but got \(String(describing: cubeDict[2]))")
+assert(cubeDict[3] == 27, "Was expecting 27, but got \(String(describing: cubeDict[3]))")
+assert(cubeDict[14] == 2744, "Was expecting 2744, but got \(String(describing: cubeDict[14]))")
+assert(cubeDict[20] == 8000, "Was expecting 8000, but got \(String(describing: cubeDict[20]))")
 
 
 // Question Six
